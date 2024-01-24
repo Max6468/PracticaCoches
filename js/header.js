@@ -16,3 +16,28 @@ function scrollFunction() {
 
   }
 }
+
+
+
+var checkbox = document.getElementById('menu__toggle');
+checkbox.addEventListener( 'change', function() {
+    if(this.checked) {
+      setTimeout(esconder, 40);
+
+    }
+    if (!this.checked) {
+      setTimeout(mostrar);
+
+    }
+});
+
+function mostrar(){
+
+  document.getElementById("left-sidebar").style.display = "block";
+}
+
+
+
+function esconder() {
+  document.getElementById("left-sidebar").style.display = "none";
+}
