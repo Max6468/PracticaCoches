@@ -1,21 +1,160 @@
-body { 
+body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #F5FAFC;
-  }
-  
-  #header {
+}
+
+#header {
     background-image: url("../img/m4portada.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center 80%;
     background-size: cover;
-    padding: 50px 10px;
-    color: black;
-    text-align: center;
-    font-size: 90px; 
-    font-weight: bold;
+    padding: 120px 10px;
     position: fixed;
     top: 0;
     width: 100%;
-    transition: 0.2s;
-  }
+    transition: 0.3s;
+}
+
+#list{
+float: left;
+}
+
+main {
+    margin-top: 400px;
+    margin: 464px 13% 0px 13%;
+    clear: both;
+
+}
+
+main h1{
+  font-size: 50px;
+  text-align: center;
+}
+
+#header h1 {
+    text-align: center;
+    font-size: 90px;
+    transition: 0.3s;
+    font-weight: bold;
+    color: #C70039;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.double {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 10%;
+    transition: 0.3s;
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin-top: 464px;
+    transition: 0.3s;
+}
+
+#left-sidebar h3,
+#right-sidebar h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+#right-sidebar {
+    right: 0;
+}
+
+#left-sidebar {
+  display: block;
+}
+
+
+#barra {
+    background: #f54d17;
+    color: #fff;
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: red;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #ECEFF1;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
+}
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: .25s;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+.hamburger-menu{
+  float: left;
+}
+
+#menu__toggle:checked ~ #left-sidebar {
+  display: block;
+}
