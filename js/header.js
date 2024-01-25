@@ -21,7 +21,7 @@ function scrollFunction() {
 
 var checkbox = document.getElementById('menu__toggle');
 checkbox.addEventListener( 'change', function() {
-    if(this.checked) {
+    if(thishecke.cd) {
       setTimeout(esconder, 40);
 
     }
