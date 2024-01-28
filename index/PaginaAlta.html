@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/PaginaAlta.css">
-    <link rel="stylesheet" href="../css/principal.css">
+    <link rel="stylesheet" href="../css/central.css">
 </head>
 <body>
 
     <div id="header">
-      
+
 
       <h1 id="titulo">CochesTop</h1>
     </div>
@@ -21,17 +21,45 @@
     </div>
 
     <main>
+
+        <h1 class="h1">Formulario de alta</h1>
         <div id="formulario">
 
         <form>
 
         <input type="text" name="Nombre" id="nombre" class="input" required placeholder="Nombre"> &nbsp;&nbsp;&nbsp; <input type="text" name="Apellidos" id="apellidos" class="input" required placeholder="Apellidos"><br>
         <input type="text" name="DNI" id="DNI" class="input" required placeholder="DNI"><br>
-        <input type="text" name="Direccion" id="direccion" class="input" required placeholder="Direccion: C/NombreCalle  Nºnum  P letraPuerta "><br>
-        <input type="text" name="Ciudad" id="ciudad" class="input" required placeholder="Ciudad">&nbsp;&nbsp;<input type="text" name="CodPostal" id="codpostal" class="input" required placeholder="Cod.Postal">&nbsp;&nbsp;<input type="text" name="Pais" id="pais" class="input" required placeholder="Pais"><br>
+        <input type="text" name="Direccion" id="direccion" class="input" required placeholder="Dirección: C/NombreCalle  Nºnum  P letraPuerta "><br>
+        <input type="text" name="Ciudad" id="ciudad" class="input" required placeholder="Ciudad">&nbsp;&nbsp;<input type="text" name="CodPostal" id="codpostal" class="input" required placeholder="Cod.Postal">&nbsp;&nbsp;<input type="text" name="Pais" id="pais" class="input" required placeholder="País"><br>
         <input type="date" name="fechaNacimiento" id="fechaNacimiento" class="input"><br>
-        <input type="email" name="email" id="email" class="input" required placeholder="Correo Electrónico">
-    
+        <input type="email" name="email" id="email" class="input" required placeholder="Correo Electrónico"><br>
+        <input type="password" name="contraseña" id="contraseña" class="input" required placeholder="Contraseña"><br>
+        <h2>Elija el sexo: </h2>
+        <div class="radio-input">
+          <input value="hombre" name="value-radio" id="hombre" type="radio">
+          <label for="hombre">Hombre</label>
+          <input value="mujer" name="value-radio" id="mujer" type="radio">
+          <label for="mujer">Mujer</label>
+          <input value="tanquesovietico" name="value-radio" id="tanquesovietico" type="radio">
+          <label for="tanquesovietico">Tanque Soviético</label>
+        </div>
+        <h2>Elige algunas aficiones: </h2>
+        <div class="center">
+          <input name="checkbox" type="checkbox">Clásicos &nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp&nbsp;&nbsp;&nbsp;<input name="checkbox" type="checkbox">Deportivos <br>
+          <input name="checkbox" type="checkbox">Superdeportivos &nbsp;&nbsp;&nbsp;<input name="checkbox" type="checkbox">Todo Terreno<br>
+          <input name="checkbox" type="checkbox">Eléctricos &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input name="checkbox" type="checkbox">Híbridos <br>
+        </div>
+        <br><br>
+        <input type="text" name="otro" id="otro" class="input" placeholder="Otro">
+        <br><br>
+        <label for="fotoperfil" class="fotodeperfil">Añadir foto de perfil</label>
+        <input id="fotoperfil" type="file" accept="image/png, image/jpeg"/><br>
+        <br>
+        <br>
+        <button class="button" type="submit">Enviar</button>
+        <button class="button" type="reset">Borrar</button>
+        <button class="button" type="button" onclick="llevarAPaginaPrincipal()">Cancelar</button>
+
 
 
 

@@ -1,8 +1,8 @@
 #formulario{
-    width: 500px;
+    width: 650px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 546px;
+    margin-top: 0px;
     border: 1px solid red;
     border-radius: 20px;
     text-align: center;
@@ -36,50 +36,212 @@
     border-bottom-width: 2px;
     transition: all 0.3s ease;
     position: relative;
+    z-index: 1;
+    text-align: center;
   }
-  
+
   .input:valid {
     border-color: #00ff2a;
     color: #00ce22;
     box-shadow: 2px 2px 8px 1px #00ca22;
   }
-  
+
   .input:invalid {
     border-color: #ff0000;
     color: #ff0000;
     box-shadow: 2px 2px 8px 1px #ff0000;
     /* translate: -8px 8px 0px 0px; */
   }
-  
+
   .text {
     margin-top: 10px;
     color: black;
   }
 
+  /*Para el radio*/
+
+  .radio-input {
+  display: flex;
+  flex-direction: row;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+}
+
+.radio-input input[type="radio"] {
+  display: none;
+}
+
+.radio-input label {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #212121;
+  border-radius: 5px;
+  margin-right: 12px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.radio-input label:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  transition: all 0.3s ease-in-out;
+}
+
+.radio-input input[type="radio"]:checked + label:before {
+  background-color: green;
+  top: 0;
+}
+
+.radio-input input[type="radio"]:checked + label {
+  background-color: royalblue;
+  color: #fff;
+  border-color: rgb(129, 235, 129);
+  animation: radio-translate 0.5s ease-in-out;
+}
+
+@keyframes radio-translate {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/*esto es de elegir las aficciones*/
+
+.center {
+  width: 100%;
+  font-size: 25px;
+  text-align: center;
+
+
+}
+
+input[type="checkbox"] {
+  position: relative;
+  top: 8px;
+  width: 30px;
+  height: 30px;
+  -webkit-appearance: none;
+  outline: none;
+  transition: 0.5s;
+  vertical-align:bottom;
+  margin: 7px 9px;
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 4px solid #262626;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+input:checked[type="checkbox"]:before {
+  border-left: none;
+  border-top: none;
+  width: 20px;
+  border-color: #4CDA00;
+  transform: rotate(45deg) translate(5px, -10px);
+}
+
+
+/*Estilo de la foto de perfil*/
+
+input[type="file"] {
+    display: none;
+}
+
+.fotodeperfil {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+    background-color: #ccc;
+}
+
+
+/*Botones de abajo*/
+
+.button {
+ color: #ecf0f1;
+ font-size: 17px;
+ background-color: #e67e22;
+ border: 1px solid #f39c12;
+ border-radius: 5px;
+ padding: 10px;
+ box-shadow: 0px 6px 0px #d35400;
+ transition: all .1s;
+}
+
+.button:active {
+ box-shadow: 0px 2px 0px #d35400;
+ position: relative;
+ top: 2px;
+}
+
+/*Estilos de cada input*/
+
+
+
+
   #nombre{
-    size: 21;
+    width: 47%;
   }
   #apellidos{
-    size: 21;
+    width: 47%;
   }
   #DNI{
-    size: 50;
+    width: 98%;
   }
   #direccion{
-    size: 50;
+    width: 98%;
   }
   #ciudad{
-    size: 13;
+    width: 31%;
   }
   #codpostal{
-    size: 12;
+    width: 32%;
   }
   #pais{
-    size: 13;
+    width: 31%;
   }
-  #fechaNacimiento{
-    size: 50;
+  #fechaNacimiento, #otro{
+    width: 98%;
+    border-color: #FFAA00;
+    color: #FF8700;
+    box-shadow: 2px 2px 8px 1px #D67100;
   }
   #email{
-    size: 50;
+    width: 98%;
+  }
+  #contraseña{
+    width: 98%;
   }
