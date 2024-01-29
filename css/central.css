@@ -16,6 +16,7 @@ body {
     top: 0;
     width: 100%;
     transition: 0.3s;
+    z-index: 10;
 }
 
 #list{
@@ -82,5 +83,6 @@ main h1{
     width: 100%;
     padding: 10px 0px;
     text-align: center;
+    z-index: 10;
 
   }

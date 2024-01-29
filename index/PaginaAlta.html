@@ -28,11 +28,18 @@
         <form>
 
         <input type="text" name="Nombre" id="nombre" class="input" required placeholder="Nombre"> &nbsp;&nbsp;&nbsp; <input type="text" name="Apellidos" id="apellidos" class="input" required placeholder="Apellidos"><br>
-        <input type="text" name="DNI" id="DNI" class="input" required placeholder="DNI"><br>
-        <input type="text" name="Direccion" id="direccion" class="input" required placeholder="Dirección: C/NombreCalle  Nºnum  P letraPuerta "><br>
-        <input type="text" name="Ciudad" id="ciudad" class="input" required placeholder="Ciudad">&nbsp;&nbsp;<input type="text" name="CodPostal" id="codpostal" class="input" required placeholder="Cod.Postal">&nbsp;&nbsp;<input type="text" name="Pais" id="pais" class="input" required placeholder="País"><br>
+        <input type="text" name="DNI" id="DNI" class="input" required placeholder="DNI" pattern="\d{8}[A-Z]"><br>
+        <input type="text" name="Direccion" id="direccion" class="input" required placeholder="Dirección: C/NombreCalle  Nºnum  P letraPuerta " pattern="C/[A-z]+\sNº\d+\sP[A-Z]"><br>
+        <input type="text" name="Ciudad" id="ciudad" class="input" required placeholder="Ciudad">&nbsp;&nbsp;<input type="text" list="cod_postales" name="CodPostal" id="codpostal" class="input" required placeholder="Cod.Postal" pattern="\d{5}">&nbsp;&nbsp;<input type="text" name="Pais" id="pais" class="input" required placeholder="País"><br>
+        <datalist id="cod_postales">
+          <option value="21001"></option>
+          <option value="26773"></option>
+          <option value="02849"></option>
+          <option value="45903"></option>
+          <option value="49377"></option>
+      </datalist>
         <input type="date" name="fechaNacimiento" id="fechaNacimiento" class="input"><br>
-        <input type="email" name="email" id="email" class="input" required placeholder="Correo Electrónico"><br>
+        <input type="email" name="email" id="email" class="input" placeholder="Correo Electrónico" pattern=".+@.+.es$"><br>
         <input type="password" name="contraseña" id="contraseña" class="input" required placeholder="Contraseña"><br>
         <h2>Elija el sexo: </h2>
         <div class="radio-input">
@@ -58,7 +65,7 @@
         <br>
         <button class="button" type="submit">Enviar</button>
         <button class="button" type="reset">Borrar</button>
-        <button class="button" type="button" onclick="llevarAPaginaPrincipal()">Cancelar</button>
+        <a href="PaginaPrincipal.html" class="button">Cancelar</a>
 
 
 
