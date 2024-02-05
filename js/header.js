@@ -31,6 +31,7 @@ checkbox.addEventListener( 'change', function() {
     }
 });
 
+
 function mostrar(){
 
   document.getElementById("left-sidebar").style.display = "block";

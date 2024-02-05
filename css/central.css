@@ -28,6 +28,7 @@ main {
     margin: 464px 13% 0px 13%;
     clear: both;
     margin-bottom: 100px;
+    text-align: center;
 
 }
 
@@ -57,11 +58,15 @@ main h1{
     transition: 0.3s;
 
 }
+.double img{
+    width: 100%;
+}
 
 #left-sidebar h3,
 #right-sidebar h3 {
     margin-bottom: 10px;
     color: #333;
+    text-align: center;
 }
 
 #right-sidebar {
@@ -71,6 +76,25 @@ main h1{
 #left-sidebar{
 }
 
+.opel-corsa{
+    transition: 0.2s;
+}
+
+.opel-corsa span {
+    display: none;
+    font-size: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #333;
+    color: #fff;
+    
+  }
+  
+.opel-corsa:hover span {
+    display: block;
+    
+  }
 
 
 
