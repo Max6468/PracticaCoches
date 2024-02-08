@@ -61,10 +61,6 @@
     color: #777;
     line-height: 1.4;
   }
-
-  .card__title .card__description{
-    
-  }
   .card__content{
     
   }
@@ -85,3 +81,23 @@ video{
     margin-right: auto;
     margin-left: auto;
 }
+
+@keyframes rainbow-animation {
+  0% {
+    background-position-x: 0%;
+    background: linear-gradient(to right, red 0%, orange 16.66%, yellow 33.33%, green 50%, blue 66.66%, indigo 83.33%, violet 100%);
+  }
+  100% {
+    background-position-x: -180%;
+    background: linear-gradient(to right, red 0%, orange 16.66%, yellow 33.33%, green 50%, blue 66.66%, indigo 83.33%, violet 100%);
+  }
+}
+
+hr {
+  height: 5px;
+  border: none;
+  background: linear-gradient(to right, red 0%, orange 16.66%, yellow 33.33%, green 50%, blue 66.66%, indigo 83.33%, violet 100%);
+  animation: rainbow-animation 5s infinite linear;
+}
+
+
