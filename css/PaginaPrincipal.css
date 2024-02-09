@@ -8,7 +8,6 @@ float: left;
     height: 100vh;
     width: 10%;
     transition: 0.3s;
-    background-color: #e0e0e0;
     padding: 20px;
     margin-top: 464px;
     transition: 0.3s;
@@ -103,4 +102,8 @@ float: left;
   0%  { -webkit-transform:rotateZ(-1deg); }
   50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
   100%{ -webkit-transform:rotateZ( 1deg); }
+}
+
+#strong{
+  font-weight: bold;
 }
