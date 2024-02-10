@@ -173,3 +173,88 @@ form:invalid button{
   cursor: not-allowed;
   box-shadow: 0px 5px 0px 0px #A20000;
 }
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+}
+
+
+
+.lista1 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista1 > li {
+  display: block;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  position: relative;
+  width: 200px;
+
+}
+
+.lista1 li {
+  list-style-type: none;
+}
+
+.lista1 > li > ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: calc(100% - 1px); /* Ajuste para que la sublista esté a la misma altura que su lista padre */
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  width: 500px;
+}
+
+.lista1 > li:hover > ul {
+  display: block;
+}
+
+.lista1 li:hover {
+  background-color: red;
+}
+
+.lista1 li ul li:hover ul {
+  display: block;
+}
+
+.lista2 {
+  position: relative;
+}
+
+ul {
+  padding-inline-start: 0px;
+
+}
+
+.lista2 li {
+  margin-bottom: 0;
+  padding: 10px 0px; 
+}
+
+.lista2 > li > ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  height: 100%;
+  width: 300px;
+}
+
+.lista2 > li:hover > ul {
+  display: flex;
+}
+
+.lista1 h3 {
+  margin: 0px;
+  padding: 10px 0px;
+}

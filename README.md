@@ -34,9 +34,14 @@ El formulario de alta permite a los usuarios registrarse en la página web. Los 
   * Borrar: Limpia el formulario.
   * Cancelar: Vuelve a la página principal ignorando los datos introducidos.
 
-  
+
 ## Página de noticias:
 
 - Información sobre el Audi R8: Al pasar el ratón por encima de las imágenes del Audi R8, se muestra información sobre el modelo.
 - Vídeo auto-reproducible: El vídeo de la página se reproduce automáticamente y no se detiene.
 - Se puede volver a la página principal desde cualquier punto de la web haciendo clic en el botón "Volver a la página principal" que se encuentra en la parte inferior de la página.
+
+
+## Página Principal:
+
+- Lista de piezas de coches
