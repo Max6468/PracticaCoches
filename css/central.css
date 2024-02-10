@@ -74,28 +74,6 @@ main h1{
 #left-sidebar{
 }
 
-.opel-corsa{
-    transition: 0.2s;
-}
-
-.opel-corsa span {
-    display: none;
-    font-size: 10px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: #333;
-    color: #fff;
-    
-  }
-  
-.opel-corsa:hover span {
-    display: block;
-    
-  }
-
-
-
 #barra {
     background: #f54d17;
     color: #fff;
@@ -116,8 +94,8 @@ main p{
 
 .container {
 
-    
-    
+
+
     background: #121212;
     background: linear-gradient(
       135deg,
@@ -130,11 +108,11 @@ main p{
       #1a1a1a
     );
     background-size: 40px 40px;
-  
-    
+
+
     animation: move 4s linear infinite;
   }
-  
+
   @keyframes move {
     0% {
       background-position: 0 0;
@@ -151,11 +129,11 @@ main p{
     color: #c6c7c7;
 }
 
-@keyframes spin { 
-    100% { 
-        -webkit-transform: rotate(360deg); 
-        transform:rotate(360deg); 
-    } 
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform:rotate(360deg);
+    }
 }
 
 .container img:hover{
